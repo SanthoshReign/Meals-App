@@ -843,7 +843,7 @@ footer{
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
     
     nav .checkbtn {
       display: block;
@@ -852,7 +852,7 @@ footer{
         margin-right: 20px;
     }
     nav .logo h2{
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: 2px;
   
     }
@@ -874,7 +874,7 @@ footer{
       height: auto;
       background-color: black;
       top: 45px;
-      right: 10%;
+      right: 15%;
       
       /* z-index: 100;
       transition: all 0.3s; */
@@ -908,11 +908,11 @@ footer{
 
   
   .banner h2{
-      font-size: 25px;
+      font-size: 20px;
       text-align: center;
   }
   .banner h3{
-      font-size: 20px;
+      font-size: 16px;
   }
 
                   /* Search Bar */
@@ -931,7 +931,7 @@ footer{
 
   .searchBar button{
       font-size: 14px;    
-      padding: 6px;  
+      padding: 5.8px;  
   }
 
                       /* search result */
@@ -941,7 +941,7 @@ footer{
                
                      /* contact */
   footer{
-      height: 45vh;
+      height: 70vh;
   }
     
   .contact-container {
@@ -949,14 +949,16 @@ footer{
       min-width: 230px;
       margin-bottom: 2rem;
       font-size: .9em;
+      display: inline;
     }
     
     
     .contact-container .contact-form-container .input-field {
-      width: 100%;
+      width: 80%;
       margin-bottom: 1rem;
       padding-left: 1rem;
       height: 2rem;  
+      margin-left: 30px;
     }
     
     .contact-container .contact-form-container textarea.input-field {
@@ -970,15 +972,15 @@ footer{
         
     .contact-container .address-container h2, .contact-container .address-container div {
       position: relative;
-      left: 1vh;
-      top: 0vh;
+      left: 100px;
+      top: 2vh;
       margin: 0.8rem 0;
       font-size: 1.1rem;
     }
     
     .contact-container .address-container div, .contact-container .address-container p {
       position: relative;
-      left: 0vh;
+      left: 80px;
       font-size: .9em;
     }
   
@@ -997,6 +999,7 @@ footer{
   }
   .social-section > div{
       font-size: .9rem;
+      margin-top: 25px;
   }
 
   .social-section ul li{

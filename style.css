@@ -8,7 +8,7 @@
                     /* home Page */
 .home{
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/Meals App/bgimg.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("bgimg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

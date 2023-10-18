@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Meals App</title>
+    <link rel="icon" href="/Meals App/siteIcon.jpg" type="image/x-icon" style="border-radius: 50%;"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'> 
+    <script src="https://kit.fontawesome.com/27e83f0700.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <section class="home"  id="home">
+
+            <!-- ======navigation section======= -->
+        <nav >
+            <div class="logo">
+               <img src="/Meals App/logo.jpg" id="logo-img">
+               <h2>Meals Ready</h2> 
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="favorite.html">Favorite</a>
+                    <div class="count-container" id="favCount">
+                        0
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+
+        </nav>
+
+            <!-- ======Banner section====== -->
+        <div class="banner">
+            <h2>Welcome to Meals App</h2>
+            <h3>Enjoy Your Meals</h3>
+        </div>
+
+
+            <!-- ======Search Bar section====== -->
+        <div class="searchBar" id="search-bar" onkeyup="mealsList()">          
+                <input type="search" placeholder="search for meals" id="search-input">            
+                <button type="submit"  onclick="mealsList"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        
+            <!-- ======Search Result section====== -->
+        <div class="searchResult">
+            <p>The Search Results are: </p>  
+        </div>
+
+        <div id="resultMeals" class="result">  </div>  
+              
+             <!-- <div class="special-food" data-food="1">
+                    <img src="/Meals App/special dishes/chicken-tandoori.jpg">
+                    <h3>chicken Tandoori</h3>
+                    <div class="details">
+                        <div class="more-details">
+                            <a href="#"><button type="submit"> Details </button></a>
+                        </div>
+                        <div class="favorite">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>        
+                </div>   -->
+                     
+        <br><hr class="line">
+          
+        <div id="details"></div>
+        <!-- ======contact section====== -->
+    <footer class="contact-section" id="contact">
+        <div class="contact-heading">
+            <h3>Contacts</h3>
+        </div>
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <form>
+                    <div><input type="text" placeholder="Your Name" class="input-field" required></div>
+                    <div><input type="email" placeholder="Your Email" class="input-field" required></div>
+                    <div><textarea class="input-field" placeholder="Message"></textarea></div>
+                    <div><a href="#"><input type="button" id="submit" value="SEND MESSAGE"></a></div>                </form>
+            </div>
+            <div class="address-container">
+                <h2>My Address</h2>
+                <div><i class="fas fa-map-marker-alt"></i>Delhi, India</div>
+                <div><i class="fas fa-mobile"></i>9999999999</div>
+                <div><i class="far fa-envelope"></i>myemail@gmail.com</div>
+            </div>
+        </div>
+        <div class="social-section ">
+            <div> follow us on</div>
+            <ul>
+               
+                <li id="facebook">
+                    <a href="#"> 
+                        <i style="color: blue" class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li id="twitter">
+                    <a href="">
+                        <i style="color: blue" class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i style="color: rgb(255, 1, 175)" class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i style="color: rgb(243, 12, 12)" class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i style="color: rgb(8, 237, 8)" class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+            
+    </section>
+    
+
+            <!-- ======script section====== -->
+    <script  src="vanilla.js"></script>
+    
+</body>
+</html>

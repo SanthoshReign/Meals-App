@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace, sans-serif;
+}
+
+
+                    /* favorite page header */
+.favorite{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/Meals App/favorite page images/bgImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+                   /* Navigation bars */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(12,11,9,0.6);
+    color: #fff;
+    padding: 0px 150px; 
+    min-height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 55%;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 15px
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 0.4s ease;
+}
+
+nav ul li a:hover{
+    color: #cda45e;
+}
+nav .logo{
+    display: flex;
+    
+}
+nav .logo h2{
+    font-size: 1.1rem;
+    margin-top: 8px;
+    font-style: italic;
+}
+.logo h2:hover{
+    color: red;
+    transform: scale(1.15);
+}
+nav .checkbtn {
+    font-size: 2.5em;
+    position: absolute;
+    left: 58%;
+    line-height: 1em;
+    cursor: pointer;
+    display: none;
+}
+    
+#check {
+    display: none;
+}
+#logo-img{
+    margin-left: -140px;
+    margin-right: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#logo-img:hover{
+    transform: scale(1.2);
+}
+
+
+/* ----------------------details page------------ */
+
+
+
+#dd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cda45e;
+}
+.food-heading{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    padding: 5px;
+    margin-top: 30px;
+}
+.food-container{
+    height: 350px;
+    width: 30vh;
+    display: inline-block;
+}
+
+.food-image img{
+    width: 310px;
+    height: 310px;
+    position: relative;
+    right: 35px;
+    margin: 10px 0;
+}  
+.food-details{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+} 
+.instruction{
+    height: auto;
+    width: 70vw;
+    text-align: justify;
+    margin-top: 70px;
+}
+.instruction h5{
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .8;
+}
+.instruction p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 3px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+
+                    /* favorite count */
+.count-container{
+    background: red;
+    height: 1.1rem;
+    width: 1.1rem;
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+    top: 8px;  
+    left: -2vh;  
+    font-size: .9rem;
+    text-align: center;
+}
+
+                                    /* Banner */
+.banner{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 7vh;
+}
+
+.banner h3{
+    color: black;
+    font-family: 700;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 4px solid black;
+    position: relative;
+    top: 5vh;
+    padding: 10px;
+    background-color: #cda45e;
+}                 
+
+
+                /* favorite Dishes */
+
+.food-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.foodTab{
+    height: 325px;
+    width: 220px;
+    background: rgba(128,128,128,0.6);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 5vh;
+}
+
+.foodTab img{
+    height: 230px;
+    width: 220px;
+    border-radius: 20px;
+}
+.foodTab img:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+.food-name{
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-family: monospace;
+    margin-top: 8px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.details button{
+    background: #cda45e;
+    border: 2px solid black;
+    font-size: 1rem;
+    padding: 4px; 
+    border-radius: 20px;
+    margin-left: 20px;
+    width: 90px;
+}
+.details button:hover{
+    background: transparent;
+    border: 2px solid #cda45e;
+    transition: 0.2s ease-in-out;
+    color: #fff;
+    box-shadow: 0px 0px 3px 3px #cda45e;
+}
+.details i{
+    font-size: 30px;
+    margin-right: 35px;
+    color: #fff;
+}
+.details i:hover{
+    color: red;
+}
+.no-items{
+    margin-bottom: 115px;
+    margin-top: 50px;
+    color: white;
+}
+
+
+
+
+
+
+
+/* --------------------------responsive screen------------------------------- */
+@media only screen and (max-width: 900px) {
+    nav ul{
+        margin-right: 50%;
+    }
+    nav .logo h2{
+        font-size: 20px;
+        margin-top: 12%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    nav .checkbtn {
+        display: block;
+        
+      }
+      nav .checkbtn i{
+        font-size: 27px;
+      }
+      .nav-menu{
+        position: absolute;
+        width: 105px;
+        height: auto;
+        background-color: black;
+        top: 50px;
+        right: 42%;
+        border-radius: 20px;
+        opacity: 0;
+      }
+      nav ul{
+        display: block;
+        padding: 0.2em;
+        /* padding-left: 16px; */
+        line-height: 8px;
+        margin: 0;
+        text-align: left;
+        border: 2px solid black;
+      }
+      nav ul li a{
+        font-size: 15px;
+      }
+      nav #check:checked ~ .nav-menu{
+        opacity: 1;
+      }
+
+    .count-container{
+        height: 10px;
+        width: 10px;
+        left: 83px;
+        top: -5vh;
+        font-size: 12px;  
+        padding: 3px;
+    }
+    
+    .banner h3{
+        font-size: 20px;
+
+    }
+    .no-items{
+        margin-bottom: 115px;
+        margin-top: 50px;
+        color: white;
+        font-size: 15px;
+        width: 80vw;
+        text-align: center;
+    }
+      
+}

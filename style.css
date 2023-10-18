@@ -1,0 +1,721 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+}
+
+                    /* home Page */
+.home{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/Meals App/bgimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+                    /* Navigation bars */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(12,11,9, 1);
+    color: #fff;
+    padding: 0px 150px; 
+    min-height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 36%;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 15px
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-right: 13px;
+}
+
+nav ul li a:hover{
+    color: violet;
+    transition: 0.2s ease-in-out;
+}
+nav .logo{
+    display: flex;
+}
+
+nav .logo h2{
+    font-size: 1.3rem;
+    margin-top: 5px;
+    font-style: italic;   
+}
+nav .logo h2:hover{
+    color: red;
+    transform: scale(1.2);
+}
+nav .checkbtn {
+    font-size: 25px;
+    position: absolute;
+    right: 5%;
+    line-height: 2em;
+    cursor: pointer;
+    display: none;
+}
+  
+#check {
+    display: none;
+  }
+#logo-img{
+    margin-left: -130px;
+    margin-right: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+#logo-img:hover{
+    transform: scale(1.2);
+}
+
+                    /* favorite count */
+.count-container{
+    background: red;
+    height: 1.1rem;
+    width: 1.1rem;
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+    top: -27px;  
+    left: 11.5vh;  
+    font-size: .9rem;
+    text-align: center;
+}
+
+.clicked{
+    color: red;
+}
+
+                 /* Welcome Banner */
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+   
+}
+.banner h2{
+    color: #cda45e;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.15rem;
+    margin-bottom: 20px;
+}
+.banner h3{   
+    font-size: 2rem;
+}
+
+
+                /* Search Bar */
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;  
+}
+.searchBar input{
+    height: 50px;
+    width: 40vw;
+    font-size: 1.2rem;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px solid #cda45e;
+    padding: 20px;
+}
+
+.searchBar button{
+    font-size: 4vh;    
+    padding: .6vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #cda45e;
+    
+}
+
+                    /* search result */
+.searchResult p{
+    font-size: 1.6rem;
+    display: grid;
+    justify-content: center;
+    margin-top: 5vh;
+    font-weight: 600;
+    
+}
+
+.result{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5vh;
+}                 
+
+hr.line{
+    border: 2px solid black;
+}
+
+.no-dish{
+    font-size: 1.6rem;
+    display: grid;
+    justify-content: center;
+    margin-top: 5vh;
+    font-weight: 600;
+    color: #fff;
+}
+                    /* special dishes */
+
+.special-heading h3{
+    font-size: 1.6rem;
+    display: grid;
+    justify-content: center;
+    margin-top: 5vh;
+    color: black;
+    font-weight: 600;
+}
+
+.special{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5vh;
+}
+
+.special-food{
+    height: 315px;
+    width: 200px;
+    background: rgba(0,0,0,0.6);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 25px;
+    margin-bottom: 6vh;
+    overflow: hidden;
+}
+
+.special-food h3{
+    margin: 13px 0px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.special-food img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;  
+    object-fit: cover;
+    overflow: hidden;
+}
+.special-food img:hover{
+    transform: scale(1.1);
+    transition: .2s ease-in-out; 
+        
+}
+.details{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.more-details{
+    height: 40px;
+    width: 100px;
+    margin-right: 40px;
+}
+.more-details a button{  
+    list-style: none; 
+    font-size: 1rem;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    background: #cda45e;
+    font-weight: 500;
+    border: 2px solid;
+}
+.more-details button:hover{ 
+    transition: 0.5 ease-in-out;
+    box-shadow: 0px 0px 3px 2px gold;
+    color: white;
+    background: transparent;
+}
+
+.details i{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.details i:hover{
+    color: red;
+}
+
+/* -------------------------contact----------------------------------------- */
+footer{
+    height: 54vh;
+    background: gray;
+}
+  
+.contact-container {
+    width: 100%;
+    min-width: 725px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1.1em;
+  }
+  
+  .contact-container .contact-form-container, .contact-container .address-container {
+    flex-basis: 40%;
+    overflow-x: hidden;
+  }
+  
+  .contact-container .contact-form-container .input-field {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border: none;
+    height: 2.5rem;
+    font-size: 1em;
+    color: black;
+    border-bottom: 3px solid white;
+    background-color: #0000;
+  }
+  
+  .contact-container .contact-form-container textarea.input-field {
+    height: 2.5rem;
+    resize: none;
+  }
+  
+  .contact-container .contact-form-container .input-field:focus {
+    outline: none;
+    border-bottom: 2px solid #bebebe;
+  }
+  
+  .contact-container .contact-form-container .input-field::placeholder {
+    color: black;
+    opacity: .7;
+  }
+  
+  .contact-container .contact-form-container #submit {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    background: gray;
+    border: 2px solid black;
+    border-radius: 22px;
+    font-family:  monospace;
+    letter-spacing: 2px;
+  }
+  
+  .contact-container .contact-form-container #submit:hover {
+    color: #fff;
+    background: blue;
+    border: 2px solid black;
+  }
+  .contact-form-container div a{
+    text-decoration: none;
+  }
+ 
+  .contact-container .address-container h2, .contact-container .address-container div {
+    position: relative;
+    left: 15vh;
+    top: 3vh;
+    margin: 0.8rem 0;
+  }
+  
+  .contact-container .address-container div, .contact-container .address-container p {
+    position: relative;
+    left: 16vh;
+    font-size: 1em;
+  }
+
+.address-container div i{
+    margin-right: 9px;
+}
+
+.contact-heading{
+    height: 3vh;
+    width: 100vw;
+    font-size: 1.6rem;
+    text-align: center;
+    position: relative;
+    top: 2vh;
+    margin-bottom: 7vh;
+}
+.social-section {
+    position: relative;
+    top: .5vh;
+}
+.social-section > div{
+    text-align: center;
+    font-size: 1.1rem;
+}
+.social-section ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;  
+}
+.social-section ul li{
+    padding: 20px;
+}
+.social-section ul li a{
+    text-decoration: none;
+}
+.social-section ul li a i{
+    font-size: 25px;
+
+}
+
+.social-section i:hover {
+    transform: scale(1.25);
+    transition: 0.3s;
+    text-shadow: 0px 0px 20px #a59f9f;
+  }
+
+
+
+ /* --------------------------------Details section-------------------------------------- */
+
+#details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cda45e;
+}
+.food-heading{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    padding: 5px;
+    margin-top: 30px;
+}
+.food-container{
+    height: 350px;
+    width: 30vh;
+    display: inline-block;
+}
+
+.food-image img{
+    width: 310px;
+    height: 310px;
+    position: relative;
+    right: 35px;
+    margin: 10px 0;
+}  
+.food-details{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+} 
+.instruction{
+    height: auto;
+    width: 70vw;
+    text-align: justify;
+    margin-top: 70px;
+}
+.instruction h5{
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .8;
+}
+.instruction p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 3px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+/* -------------------------screen responsive----------------------------------- */
+
+@media only screen and (max-width: 1000px) {
+    nav ul{
+        margin-right: 110px;
+    }
+    nav ul li{
+        padding: 10px
+    }
+    nav .logo h2{
+        font-size: 20px;
+        margin-top: 12%;
+    }
+    .detail-page{
+        height: 1300px;
+    }
+    .banner h2{
+        font-size: 35px;
+    }
+    .banner h3{
+        font-size: 25px;
+    }
+    /* Search Bar */
+    .searchBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;  
+    }
+    .searchBar input{
+        height: 40px;
+        width: 40vw;
+        font-size: 1.2rem;
+        
+        padding: 10px;
+    }
+
+    .searchBar button{
+        font-size: 3vh;    
+        padding: .6vh;  
+    }
+
+                    /* search result */
+    .searchResult p{
+        font-size: 1.5rem;   
+    }
+                  
+        /* contact */
+        footer{
+        height: 47vh;
+    }
+        
+    .contact-container {
+        width: 100%;
+        min-width: 500px;
+        margin-bottom: 2rem;
+        font-size: 1em;
+        }
+        
+        
+        .contact-container .contact-form-container .input-field {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        height: 2rem;  
+        }
+        
+        .contact-container .contact-form-container textarea.input-field {
+        height: 2rem;
+        resize: none;
+        }
+        
+        .contact-container .contact-form-container #submit {
+        font-size: .8rem;     
+        }
+            
+        .contact-container .address-container h2, .contact-container .address-container div {
+        position: relative;
+        left: 9vh;
+        top: 2vh;
+        margin: 0.8rem 0;
+        font-size: 1.2rem;
+        }
+        
+        .contact-container .address-container div, .contact-container .address-container p {
+        position: relative;
+        left: 9vh;
+        font-size: .9em;
+        }
+    
+    
+    .contact-heading{
+        height: 2vh;
+        width: 100vw;
+        font-size: 1.3rem;
+    }
+
+    /* social section */
+
+    .social-section {
+        position: relative;
+        top: .3vh;
+    }
+    .social-section > div{
+        font-size: 1rem;
+    }
+
+    .social-section ul li{
+        padding: 15px;
+    }
+
+    .social-section ul li a i{
+        font-size: 20px;  
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+      nav .checkbtn {
+        display: block;
+      }
+      .nav-menu{
+        position: absolute;
+        width: 105px;
+        height: auto;
+        background-color: black;
+        top: 45px;
+        right: 10%;
+        
+        /* z-index: 100;
+        transition: all 0.3s; */
+        opacity: 0;
+      }
+      nav ul{
+        display: block;
+        padding: 0.2em;
+        /* padding-left: 16px; */
+        line-height: 8px;
+        margin: 0;
+        text-align: left;
+        border: 2px solid black;
+      }
+      nav ul li a{
+        font-size: 15px;
+      }
+      nav ul :nth-child(1){
+        margin-bottom: 15px;
+      }
+      
+      nav #check:checked ~ .nav-menu{
+        opacity: 1;
+      }
+
+      .count-container{
+        position: relative;
+        left: 65px;
+        padding: 3px;
+       }
+
+    .detail-page{
+        height: 1550px;
+    }
+    .banner h2{
+        font-size: 35px;
+    }
+    .banner h3{
+        font-size: 25px;
+    }
+
+                    /* Search Bar */
+    .searchBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;  
+    }
+    .searchBar input{
+        height: 40px;
+        width: 40vw;
+        font-size: 1rem;      
+        padding: 10px;
+    }
+
+    .searchBar button{
+        font-size: 3vh;    
+        padding: .6vh;  
+    }
+
+                        /* search result */
+    .searchResult p{
+        font-size: 1.3rem;   
+    }
+                 
+                       /* contact */
+    footer{
+        height: 47vh;
+    }
+      
+    .contact-container {
+        width: 100%;
+        min-width: 500px;
+        margin-bottom: 2rem;
+        font-size: 1em;
+      }
+      
+      
+      .contact-container .contact-form-container .input-field {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        height: 2rem;  
+      }
+      
+      .contact-container .contact-form-container textarea.input-field {
+        height: 2rem;
+        resize: none;
+      }
+      
+      .contact-container .contact-form-container #submit {
+        font-size: .8rem;     
+      }
+          
+      .contact-container .address-container h2, .contact-container .address-container div {
+        position: relative;
+        left: 9vh;
+        top: 2vh;
+        margin: 0.8rem 0;
+        font-size: 1.2rem;
+      }
+      
+      .contact-container .address-container div, .contact-container .address-container p {
+        position: relative;
+        left: 9vh;
+        font-size: .9em;
+      }
+    
+    
+    .contact-heading{
+        height: 2vh;
+        width: 100vw;
+        font-size: 1.3rem;
+    }
+
+    /* social section */
+
+    .social-section {
+        position: relative;
+        top: .3vh;
+    }
+    .social-section > div{
+        font-size: 1rem;
+    }
+
+    .social-section ul li{
+        padding: 15px;
+    }
+
+    .social-section ul li a i{
+        font-size: 20px;  
+    }
+}
